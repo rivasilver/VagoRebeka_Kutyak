@@ -1,3 +1,7 @@
+<!-- Nem teljesen értettem, hogy mit jelent az "ugyan ez az oldal dolgozza fel 
+az elküldött adatokat" és "szerver oldali validáció történjen" együttes elvárása, 
+erről majd tudna beszélni a Tanár úr? -->
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
