@@ -18,7 +18,46 @@
     </nav>
     <main class="container">
         <h1>Kutyák listázása</h1>
-    
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Név</th>
+                    <th>Fajta</th>
+                    <th>Kor</th>
+                    <th>Nem</th>
+                    <th>Szín</th>
+            </thead>
+            <tbody>
+                <?php
+                $file = fopen("adatok.csv", "r");
+                $i = 0;
+                while ($sor = fgets($file)) {
+                    $i++;
+                    $adatok = explode(";", $sor);
+                    ?>
+                    <tr>
+                        <td><?php echo $i ?></td>
+                        <td><?php echo $adatok[0] ?></td>
+                        <td><?php echo $adatok[1] ?></td>
+                        <td><?php echo $adatok[2] ?></td>
+                        <td><?php echo $adatok[3] ?></td>
+                        <td><?php echo $adatok[4] ?></td>
+                    </tr>
+                    <?php
+                }
+                fclose($file);
+                ?>
+            </tbody>
+            <tfoot>
+                    <th>#</th>
+                    <th>Név</th>
+                    <th>Fajta</th>
+                    <th>Kor</th>
+                    <th>Nem</th>
+                    <th>Szín</th>
+            </tfoot>
+        </table>
     </main>
 
 
