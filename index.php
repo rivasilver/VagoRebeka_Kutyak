@@ -20,6 +20,11 @@
             <li class="nav-item"><a class="nav-link" href="felvetel.php">Felvétel</a></li>
         </ul>
     </nav>
+    <main class="container">
+        <h1>Kutyák listázása</h1>
     
+    </main>
+
+
 </body>
 </html>
